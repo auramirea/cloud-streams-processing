@@ -1,0 +1,10 @@
+global com.test.processing.models.Result r;
+import com.test.processing.models.MarketCap
+dialect  "mvel"
+
+rule "Generate alert if market cap difference bigger than 10"
+    when
+        marketCapDifferenceInstance:MarketCap(marketCapDifference > 10);
+    then
+        r.setIsAlert(true);
+end

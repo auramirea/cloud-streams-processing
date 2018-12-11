@@ -24,6 +24,11 @@
 	</properties>
 
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-stream-kafka -->
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.cloud</groupId>-->
+			<!--<artifactId>spring-cloud-starter-stream-kafka</artifactId>-->
+		<!--</dependency>-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-stream</artifactId>
@@ -32,10 +37,10 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-stream-binder-kafka-streams</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-stream-binder-kafka</artifactId>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.cloud</groupId>-->
+			<!--<artifactId>spring-cloud-stream-binder-kafka</artifactId>-->
+		<!--</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -46,9 +51,32 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.drools</groupId>
+			<artifactId>drools-core</artifactId>
+			<version>7.15.0.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kie</groupId>
+			<artifactId>kie-spring</artifactId>
+			<version>7.15.0.Final</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-stream-test-support</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.4</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 
