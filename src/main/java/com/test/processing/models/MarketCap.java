@@ -6,5 +6,5 @@ import java.math.BigDecimal;
 
 @Value
 public class MarketCap {
-    BigDecimal marketCapDifference;
+    double marketCapDifference;
 }

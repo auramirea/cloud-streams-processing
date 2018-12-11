@@ -30,8 +30,8 @@ public class AlertGenerator {
 
     @StreamListener("input")
     @SendTo("output")
-    public Boolean process(BigDecimal input) {
-        MarketCap marketCap = new MarketCap(input);
+    public Boolean process(com.test.processing.Marketcap marketcap) {
+        MarketCap marketCap = new MarketCap(marketcap.getMarketcap());
         Boolean alert = marketCapServiced.isAlert(marketCap);
         System.out.println("isAlert: " + alert);
 

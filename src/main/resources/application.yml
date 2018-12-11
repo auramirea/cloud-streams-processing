@@ -1,0 +1,13 @@
+spring.application.name: processor
+spring.cloud.stream:
+      bindings:
+        input:
+          destination: topic_input
+        output:
+          destination: topic_output
+      schema:
+        avro:
+          schema-locations: classpath:avro/event.avsc
+      schemaRegistryClient.endpoint: http://localhost:8081
+server:
+  port: 8082

@@ -1,0 +1,8 @@
+{
+      "namespace": "com.test.processing",
+      "type" : "record",
+      "name": "Marketcap",
+      "fields" : [
+        {"name":"marketcap","type":"double"}
+      ]
+}
